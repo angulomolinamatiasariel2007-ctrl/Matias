@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #333333;
+    padding: 30px;
+}
+
+.cv {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+/* ENCABEZADO */
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    border-bottom: 5px solid #99FFFF;
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    color: #193444;
+    margin-bottom: 10px;
+}
+
+.encabezado h3 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #555555;
+}
+
+.foto {
+    width: 125px;
+    height: 145px;
+    object-fit: cover;
+    border: 3px solid #99FFFF;
+}
+
+/* INFORMACIÓN */
+.contenido {
+    display: flex;
+    flex-direction: row;
+}
+
+.lateral {
+    width: 35%;
+    background-color: #f3f7f7;
+    padding: 30px 25px;
+}
+
+.principal {
+    width: 65%;
+    padding: 30px;
+}
+
+/* SECCIONES */
+.seccion {
+    margin-bottom: 28px;
+}
+
+.seccion h2 {
+    color: #193444;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #99FFFF;
+    padding-bottom: 9px;
+    margin-bottom: 15px;
+}
+
+.seccion p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.seccion h3 {
+    color: #246477;
+    font-size: 15px;
+    margin: 12px 0 5px;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.contacto p {
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.fecha {
+    color: #777777;
+    font-size: 13px;
+}
+
+/* PIE */
+.pie {
+    background-color: #193444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .encabezado {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .lateral,
+    .principal {
+        width: 100%;
+    }
+}
